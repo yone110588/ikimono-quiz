@@ -44,11 +44,10 @@
 
   $("app").innerHTML = `
   <section id="home" class="screen">
-    <header class="topbar">
-      <span class="topbar-sub" id="today"></span>
+    <header class="home-head">
+      <h1 class="display">いきものクイズ</h1>
       <a class="icon-btn" href="#credits" aria-label="写真・音声のクレジット">${icon("info")}</a>
     </header>
-    <h1 class="display">いきものクイズ</h1>
     <article class="card feature">
       <div class="media"><img id="featureImg" alt=""></div>
       <div class="card-body">
@@ -333,8 +332,6 @@
   function renderHome() {
     setColor("home");
     document.title = "いきものクイズ";
-    const now = new Date();
-    $("today").textContent = `${now.getMonth() + 1}月${now.getDate()}日（${"日月火水木金土"[now.getDay()]}）`;
 
     const pick = todayPick();
     const pq = byId[pick.quiz];
