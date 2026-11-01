@@ -63,7 +63,6 @@
     <h3 class="section-title">クイズ</h3>
     <div class="tiles" id="tiles"></div>
     <p class="footnote">写真と音声は iNaturalist の観察記録から、撮影者・録音者が定めたクリエイティブ・コモンズ・ライセンスに従って使っています。<a href="#credits">クレジット</a></p>
-    <button class="fab" id="fab">${icon("shuffle")}ミックスで出題</button>
   </section>
 
   <section id="start" class="screen" hidden>
@@ -674,7 +673,6 @@
   $("back").onclick = toQuizTop;
   $("toHome").onclick = goHome;
   $("creditsBack").onclick = goHome;
-  $("fab").onclick = () => { pending = "photo"; location.hash = "mix"; };
   $("answerSeg").onclick = (e) => {
     const v = e.target.closest("[data-ans]")?.dataset.ans;
     if (!v) return;

@@ -132,10 +132,6 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .lin { display: block; height: 4px; border-radius: 2px; background: var(--sf-highest); overflow: hidden; }
 .lin i { display: block; height: 100%; border-radius: 2px; background: var(--p); min-width: 0; }
 
-/* 浮かぶ操作ボタン（FAB） */
-.fab { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(96px + env(safe-area-inset-bottom, 0px)); z-index: 6; height: 56px; padding: 0 20px 0 16px; border-radius: 16px; display: inline-flex; align-items: center; gap: 12px; background: var(--pc); color: var(--on-pc); font-size: 15px; font-weight: 500; box-shadow: var(--shadow3); }
-.fab:active { box-shadow: var(--shadow1); }
-
 /* 下のナビゲーションバー */
 .navbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 7; display: grid; grid-template-columns: repeat(3, 1fr); padding: 12px max(8px, env(safe-area-inset-right, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px)); background: var(--sfc); }
 .navbar a { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; font-weight: 500; color: var(--on-sfv); text-decoration: none; }
