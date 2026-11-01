@@ -1,0 +1,14 @@
+{
+  "name": "いきものクイズ",
+  "short_name": "いきもの",
+  "description": "日本の野鳥・虫・魚・キノコを写真と鳴き声で覚えるクイズ",
+  "lang": "ja",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8faf3",
+  "theme_color": "#f8faf3",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
